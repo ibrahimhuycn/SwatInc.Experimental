@@ -1,6 +1,4 @@
-﻿Imports System.ComponentModel
-
-Public Class Person
+﻿Public Class Person
 
     Public Overridable Property NationalIdCardNumber As String
     Public Overridable Property FirstName As String
