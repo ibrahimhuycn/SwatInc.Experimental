@@ -73,14 +73,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ViewModels\Address.vb" />
-    <Compile Include="ViewModels\Contact.vb" />
-    <Compile Include="ViewModels\ContactType.vb" />
-    <Compile Include="ViewModels\PersonViewModel.vb" />
-    <Compile Include="Views\PersonView.vb">
+    <Compile Include="Model\Address.vb" />
+    <Compile Include="Model\Contact.vb" />
+    <Compile Include="Model\ContactType.vb" />
+    <Compile Include="Model\Person.vb" />
+    <Compile Include="View\PersonView.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\PersonView.Designer.vb">
+    <Compile Include="View\PersonView.Designer.vb">
       <DependentUpon>PersonView.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -107,7 +107,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\PersonView.resx">
+    <EmbeddedResource Include="View\PersonView.resx">
       <DependentUpon>PersonView.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -122,6 +122,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
