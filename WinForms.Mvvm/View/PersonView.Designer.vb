@@ -22,168 +22,78 @@ Partial Class PersonView
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBoxNationalIdCardNumber = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBoxLastName = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.components = New System.ComponentModel.Container()
+        Me.ViewModelBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TextBoxFirstName = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.LabelFirstName = New System.Windows.Forms.Label()
+        Me.LabelLastName = New System.Windows.Forms.Label()
+        Me.TextBoxLastName = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.ViewModelBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TextBoxNationalIdCardNumber
-        '
-        Me.TextBoxNationalIdCardNumber.Location = New System.Drawing.Point(58, 67)
-        Me.TextBoxNationalIdCardNumber.Name = "TextBoxNationalIdCardNumber"
-        Me.TextBoxNationalIdCardNumber.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxNationalIdCardNumber.TabIndex = 0
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(618, 171)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(618, 145)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 2
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(618, 119)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 3
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(618, 93)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 4
-        '
-        'TextBoxLastName
-        '
-        Me.TextBoxLastName.Location = New System.Drawing.Point(618, 67)
-        Me.TextBoxLastName.Name = "TextBoxLastName"
-        Me.TextBoxLastName.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxLastName.TabIndex = 5
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(302, 171)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 6
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(302, 145)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox8.TabIndex = 7
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(302, 119)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox9.TabIndex = 8
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(302, 93)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox10.TabIndex = 9
         '
         'TextBoxFirstName
         '
-        Me.TextBoxFirstName.Location = New System.Drawing.Point(302, 67)
+        Me.TextBoxFirstName.Location = New System.Drawing.Point(21, 42)
         Me.TextBoxFirstName.Name = "TextBoxFirstName"
         Me.TextBoxFirstName.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxFirstName.TabIndex = 10
+        Me.TextBoxFirstName.TabIndex = 0
         '
-        'TextBox12
+        'LabelFirstName
         '
-        Me.TextBox12.Location = New System.Drawing.Point(58, 171)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox12.TabIndex = 11
+        Me.LabelFirstName.AutoSize = True
+        Me.LabelFirstName.Location = New System.Drawing.Point(18, 26)
+        Me.LabelFirstName.Name = "LabelFirstName"
+        Me.LabelFirstName.Size = New System.Drawing.Size(57, 13)
+        Me.LabelFirstName.TabIndex = 1
+        Me.LabelFirstName.Text = "First Name"
         '
-        'TextBox13
+        'LabelLastName
         '
-        Me.TextBox13.Location = New System.Drawing.Point(58, 145)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox13.TabIndex = 12
+        Me.LabelLastName.AutoSize = True
+        Me.LabelLastName.Location = New System.Drawing.Point(124, 26)
+        Me.LabelLastName.Name = "LabelLastName"
+        Me.LabelLastName.Size = New System.Drawing.Size(58, 13)
+        Me.LabelLastName.TabIndex = 3
+        Me.LabelLastName.Text = "Last Name"
         '
-        'TextBox14
+        'TextBoxLastName
         '
-        Me.TextBox14.Location = New System.Drawing.Point(58, 119)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox14.TabIndex = 13
+        Me.TextBoxLastName.Location = New System.Drawing.Point(127, 42)
+        Me.TextBoxLastName.Name = "TextBoxLastName"
+        Me.TextBoxLastName.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxLastName.TabIndex = 2
         '
-        'TextBox15
+        'Button1
         '
-        Me.TextBox15.Location = New System.Drawing.Point(58, 93)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox15.TabIndex = 14
+        Me.Button1.Location = New System.Drawing.Point(256, 40)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'PersonView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 266)
-        Me.Controls.Add(Me.TextBox15)
-        Me.Controls.Add(Me.TextBox14)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBoxFirstName)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
+        Me.ClientSize = New System.Drawing.Size(384, 118)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.LabelLastName)
         Me.Controls.Add(Me.TextBoxLastName)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBoxNationalIdCardNumber)
+        Me.Controls.Add(Me.LabelFirstName)
+        Me.Controls.Add(Me.TextBoxFirstName)
         Me.Name = "PersonView"
-        Me.Text = "Form1"
+        Me.Text = "Person"
+        CType(Me.ViewModelBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents TextBoxNationalIdCardNumber As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBoxLastName As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents ViewModelBindingSource As BindingSource
     Friend WithEvents TextBoxFirstName As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents LabelFirstName As Label
+    Friend WithEvents LabelLastName As Label
+    Friend WithEvents TextBoxLastName As TextBox
+    Friend WithEvents Button1 As Button
 End Class

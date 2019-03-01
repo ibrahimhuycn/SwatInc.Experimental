@@ -3,7 +3,7 @@
 Public Class PersonViewModel
     Implements INotifyPropertyChanged
 
-    Private Property _model As Person
+    Private Property _model As New Person
     Overridable Property NationalIdCardNumber As String
         Get
             Return _model.NationalIdCardNumber
