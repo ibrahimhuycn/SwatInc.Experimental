@@ -1,11 +1,11 @@
 ﻿Public Class PersonView
-    Private ReadOnly Property _viewModel As Object
+    Public Shared Property _viewModel As PersonViewModel
 
     Public Sub New()
 
         InitializeComponent()
-        Me._viewModel = New PersonViewModel
-        Me.ViewModelBindingSource.DataSource = _viewModel
+        PersonView._viewModel = New PersonViewModel
+        Me.ViewModelBindingSource.DataSource = PersonView._viewModel
         Me.InitializeBindings()
     End Sub
 
@@ -16,15 +16,6 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If _viewModel.FirstName = "" Then
-            _viewModel.FirstName = "Ibrahim"
-            _viewModel.Lastname = "Hussain"
-            Button1.Text = "Clear"
-        Else
-            _viewModel.FirstName = ""
-            _viewModel.Lastname = ""
-            Button1.Text = "Find"
-        End If
-
+        Person.GetPerson("1")
     End Sub
 End Class

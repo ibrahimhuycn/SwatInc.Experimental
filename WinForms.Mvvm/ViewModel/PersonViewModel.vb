@@ -32,13 +32,13 @@ Public Class PersonViewModel
 
     Overridable Property LastName As String
         Get
-            Return _model.Lastname
+            Return _model.LastName
         End Get
         Set
-            If _model.Lastname Is Value Then
+            If _model.LastName Is Value Then
                 Return
             End If
-            _model.Lastname = Value
+            _model.LastName = Value
             RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(NameOf(LastName)))
         End Set
     End Property
