@@ -30,7 +30,7 @@ Public Class PersonViewModel
         End Set
     End Property
 
-    Overridable Property Lastname As String
+    Overridable Property LastName As String
         Get
             Return _model.Lastname
         End Get
@@ -39,7 +39,7 @@ Public Class PersonViewModel
                 Return
             End If
             _model.Lastname = Value
-            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(NameOf(Lastname)))
+            RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(NameOf(LastName)))
         End Set
     End Property
 
