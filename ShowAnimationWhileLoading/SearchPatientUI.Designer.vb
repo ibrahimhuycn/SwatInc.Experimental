@@ -103,7 +103,7 @@ Partial Class SearchPatientUI
         '
         Me.PanelSearchResults.Controls.Add(Me.TextBoxSearchResults)
         Me.PanelSearchResults.Controls.Add(Me.LabelSearchResults)
-        Me.PanelSearchResults.Location = New System.Drawing.Point(0, 1)
+        Me.PanelSearchResults.Location = New System.Drawing.Point(1, 2)
         Me.PanelSearchResults.Name = "PanelSearchResults"
         Me.PanelSearchResults.Size = New System.Drawing.Size(380, 168)
         Me.PanelSearchResults.TabIndex = 5
@@ -112,10 +112,11 @@ Partial Class SearchPatientUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 205)
+        Me.ClientSize = New System.Drawing.Size(384, 196)
         Me.Controls.Add(Me.PanelSearchResults)
         Me.Controls.Add(Me.ButtonSearch)
         Me.Controls.Add(Me.PanelAnimation)
+        Me.MaximizeBox = False
         Me.Name = "SearchPatientUI"
         Me.Text = "Patient Search"
         Me.PanelAnimation.ResumeLayout(False)

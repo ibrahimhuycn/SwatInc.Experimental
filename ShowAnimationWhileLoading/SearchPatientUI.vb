@@ -15,7 +15,8 @@ Public Class SearchPatientUI
 
         ButtonSearch.Enabled = True
         TextBoxSearchResults.Text = String.Format("Patient Name: {0}{1}Patient Age: {2}  Sex: {3}{1}National Id: ", DemoData.PatientName, vbCrLf, DemoData.Age, DemoData.Sex, DemoData.IDCardNumber)
-        PanelAnimation.Hide()
+        ProgressBarAnimation.Style = ProgressBarStyle.Blocks
+        ' PanelAnimation.Hide()
         PanelSearchResults.Show()
 
     End Sub
