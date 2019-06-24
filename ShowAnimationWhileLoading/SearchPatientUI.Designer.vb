@@ -27,8 +27,8 @@ Partial Class SearchPatientUI
         Me.ButtonSearch = New System.Windows.Forms.Button()
         Me.ProgressBarAnimation = New System.Windows.Forms.ProgressBar()
         Me.PanelAnimation = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelSearchResults = New System.Windows.Forms.Panel()
         Me.PanelAnimation.SuspendLayout()
         Me.PanelSearchResults.SuspendLayout()
@@ -79,16 +79,6 @@ Partial Class SearchPatientUI
         Me.PanelAnimation.Size = New System.Drawing.Size(200, 58)
         Me.PanelAnimation.TabIndex = 4
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Calibri", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(34, 17)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 18)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Searching for Data"
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -98,6 +88,16 @@ Partial Class SearchPatientUI
         Me.Label2.Size = New System.Drawing.Size(79, 15)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Please wait..."
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(34, 17)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(123, 18)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Searching for Data"
         '
         'PanelSearchResults
         '
@@ -112,7 +112,7 @@ Partial Class SearchPatientUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(384, 196)
+        Me.ClientSize = New System.Drawing.Size(382, 193)
         Me.Controls.Add(Me.PanelSearchResults)
         Me.Controls.Add(Me.ButtonSearch)
         Me.Controls.Add(Me.PanelAnimation)
