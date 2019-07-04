@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[ReturnInsertedIdTest]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Surname] VARCHAR(50) NOT NULL
+)
