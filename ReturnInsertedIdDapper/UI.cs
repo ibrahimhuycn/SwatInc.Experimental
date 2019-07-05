@@ -15,6 +15,7 @@ namespace ReturnInsertedIdDapper
         public UI()
         {
             InitializeComponent();
+            LoadData();
         }
 
         private void Save_Click(object sender, EventArgs e)
@@ -34,13 +35,25 @@ namespace ReturnInsertedIdDapper
 
             //clear textbox
             //load data
+            LoadData();
             //enable the save button
+
+
             save.Enabled = true;
 
         }
+
+        private void LoadData()
+        {
+            List<Names> Nameslist = SqlDataAccess.LoadData<Names>("usp_SelectAll_ReturnInsertedTestId");
+
+            dataGridViewNames.DataSource = Nameslist;
+        }
     }
 
-    public class Surname
+
+
+    public class Names
     {
         public int Id { get; set; }
 
@@ -52,9 +65,9 @@ namespace ReturnInsertedIdDapper
     {
         public Surnames()
         {
-            SurnamesCol = new List<Surname>();
+            SurnamesCol = new List<Names>();
         }
-        public List<Surname> SurnamesCol { get; set; }
+        public List<Names> SurnamesCol { get; set; }
     }
 
 }

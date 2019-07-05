@@ -81,17 +81,18 @@
             // 
             // dataGridViewNames
             // 
+            this.dataGridViewNames.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridViewNames.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewNames.Location = new System.Drawing.Point(116, 23);
             this.dataGridViewNames.Name = "dataGridViewNames";
-            this.dataGridViewNames.Size = new System.Drawing.Size(181, 104);
+            this.dataGridViewNames.Size = new System.Drawing.Size(180, 104);
             this.dataGridViewNames.TabIndex = 5;
             // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 139);
+            this.ClientSize = new System.Drawing.Size(319, 139);
             this.Controls.Add(this.dataGridViewNames);
             this.Controls.Add(this.Save);
             this.Controls.Add(this.label2);
