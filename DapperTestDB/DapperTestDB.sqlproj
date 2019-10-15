@@ -72,5 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DapperTestDB.publish.xml" />
+    <None Include="DapperTestDB_1.publish.xml" />
   </ItemGroup>
 </Project>
