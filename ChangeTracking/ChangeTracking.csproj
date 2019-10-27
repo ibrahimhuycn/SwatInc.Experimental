@@ -46,16 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeTrackingView.cs">
+    <Compile Include="Views\ChangeTrackingView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChangeTrackingView.Designer.cs">
+    <Compile Include="Views\ChangeTrackingView.Designer.cs">
       <DependentUpon>ChangeTrackingView.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\INotifyDirtyData.cs" />
+    <Compile Include="Models\PatientModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ChangeTrackingView.resx">
+    <Compile Include="ViewModels\ChangeTrackingViewModel.cs" />
+    <EmbeddedResource Include="Views\ChangeTrackingView.resx">
       <DependentUpon>ChangeTrackingView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -80,10 +82,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

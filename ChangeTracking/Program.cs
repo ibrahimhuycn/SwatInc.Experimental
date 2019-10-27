@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ChangeTracking.Models;
+using ChangeTracking.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,10 @@ namespace ChangeTracking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChangeTrackingView());
+
+          // var patient = new PatientModel() { MedicalRecordNumber = "ASD2345", LastName = "" };
+
+            Application.Run(new ChangeTrackingView(new ChangeTrackingViewModel(new PatientModel())));
         }
     }
 }
