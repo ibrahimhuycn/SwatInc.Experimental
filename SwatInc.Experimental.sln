@@ -15,7 +15,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DapperTestDB", "DapperTestD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnInsertedIdDapper", "ReturnInsertedIdDapper\ReturnInsertedIdDapper.csproj", "{27EFB68C-7E7A-4227-A44E-53EB0461C78D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeTracking", "ChangeTracking\ChangeTracking.csproj", "{ABD0328A-557A-41EE-82F9-75B5C581C545}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeTracking", "ChangeTracking\ChangeTracking.csproj", "{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +49,10 @@ Global
 		{27EFB68C-7E7A-4227-A44E-53EB0461C78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27EFB68C-7E7A-4227-A44E-53EB0461C78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27EFB68C-7E7A-4227-A44E-53EB0461C78D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ABD0328A-557A-41EE-82F9-75B5C581C545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ABD0328A-557A-41EE-82F9-75B5C581C545}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ABD0328A-557A-41EE-82F9-75B5C581C545}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ABD0328A-557A-41EE-82F9-75B5C581C545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
