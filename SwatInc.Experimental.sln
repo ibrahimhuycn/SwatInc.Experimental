@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnInsertedIdDapper", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeTracking", "ChangeTracking\ChangeTracking.csproj", "{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectCapsLockStatus", "DetectCapsLockStatus\DetectCapsLockStatus.csproj", "{1565C601-21EB-46E1-BB12-82776AE6EA5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C58C4A1F-9DF6-4299-BBC1-D12664AECAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1565C601-21EB-46E1-BB12-82776AE6EA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1565C601-21EB-46E1-BB12-82776AE6EA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1565C601-21EB-46E1-BB12-82776AE6EA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1565C601-21EB-46E1-BB12-82776AE6EA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

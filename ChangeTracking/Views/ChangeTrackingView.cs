@@ -31,9 +31,14 @@ namespace ChangeTracking
 
             //Binding Medical Record Number
             textBoxMrn.DataBindings.Add(new Binding("Text", _viewModel.DirtyPatientModel, nameof(_viewModel.DirtyPatientModel.MedicalRecordNumber)));
-
+           
             //Binding Save button Enabled State
             buttonSave.DataBindings.Add(new Binding("Enabled", _viewModel.DirtyPatientModel, nameof(_viewModel.DirtyPatientModel.HasChangedData)));
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            _viewModel.DirtyPatientModel.ClearChangedData();
         }
     }
 }
