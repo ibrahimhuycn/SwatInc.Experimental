@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,12 +10,12 @@ namespace BindNestedClassesAndCollections
     {
         public Request()
         {
-            this.Samples = new ObservableCollection<Sample>();
+            this.Samples = new List<Sample>();
         }
         public string RequestNo { get; set; }
         public string PatientName { get; set; }
 
-        public ObservableCollection<Sample> Samples;
+        public List<Sample> Samples;
 
     }
 
