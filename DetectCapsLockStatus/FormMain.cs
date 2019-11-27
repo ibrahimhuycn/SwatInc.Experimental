@@ -12,6 +12,8 @@ namespace DetectCapsLockStatus
 {
     public partial class FormMain : Form
     {
+        private const string CapsOnText = "Caps Lock ON";
+        private const string CapsOffText = "Caps Lock OFF";
         private bool? CapsLockStatus;
         private delegate void CapsLockStatusChanged(object sender, bool isLocked);
         private event CapsLockStatusChanged RaiseCapsLockStatusChanged;
@@ -29,10 +31,10 @@ namespace DetectCapsLockStatus
             switch (isLocked)
             {
                 case true:
-                    this.labelCapsLockStatus.Text = "Caps Lock ON";
+                    this.labelCapsLockStatus.Text = CapsOnText;
                     break;
                 case false:
-                    this.labelCapsLockStatus.Text = "Caps Lock OFF";
+                    this.labelCapsLockStatus.Text = CapsOffText;
                     break;
             }
         }

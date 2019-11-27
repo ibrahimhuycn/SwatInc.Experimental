@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectCapsLockStatus", "Det
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitForms", "WaitForms\WaitForms.csproj", "{8E998B27-1FAB-4463-9E97-51DC95C6BC58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindNestedClassesAndCollections", "BindNestedClassesAndCollections\BindNestedClassesAndCollections.csproj", "{E3FD67E9-5189-4BA4-85AE-447DE89F1914}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{8E998B27-1FAB-4463-9E97-51DC95C6BC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E998B27-1FAB-4463-9E97-51DC95C6BC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E998B27-1FAB-4463-9E97-51DC95C6BC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FD67E9-5189-4BA4-85AE-447DE89F1914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FD67E9-5189-4BA4-85AE-447DE89F1914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FD67E9-5189-4BA4-85AE-447DE89F1914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FD67E9-5189-4BA4-85AE-447DE89F1914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
