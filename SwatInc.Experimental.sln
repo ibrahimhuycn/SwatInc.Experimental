@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitForms", "WaitForms\Wait
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindNestedClassesAndCollections", "BindNestedClassesAndCollections\BindNestedClassesAndCollections.csproj", "{E3FD67E9-5189-4BA4-85AE-447DE89F1914}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportViewerTestRdlc", "ReportViewerTestRdlc\ReportViewerTestRdlc.csproj", "{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{E3FD67E9-5189-4BA4-85AE-447DE89F1914}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3FD67E9-5189-4BA4-85AE-447DE89F1914}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3FD67E9-5189-4BA4-85AE-447DE89F1914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
