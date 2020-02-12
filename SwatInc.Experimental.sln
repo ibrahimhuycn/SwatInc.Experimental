@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindNestedClassesAndCollect
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportViewerTestRdlc", "ReportViewerTestRdlc\ReportViewerTestRdlc.csproj", "{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sha1Hash", "Sha1Hash\Sha1Hash.csproj", "{B9D785D2-89C9-4F41-B348-C94170B80346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPalSubscriptionsPOC", "PayPalSubscriptionsPOC\PayPalSubscriptionsPOC.csproj", "{811E11BD-DED3-48E0-9591-C5CA87F1384A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +81,14 @@ Global
 		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D785D2-89C9-4F41-B348-C94170B80346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D785D2-89C9-4F41-B348-C94170B80346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D785D2-89C9-4F41-B348-C94170B80346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D785D2-89C9-4F41-B348-C94170B80346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811E11BD-DED3-48E0-9591-C5CA87F1384A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811E11BD-DED3-48E0-9591-C5CA87F1384A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811E11BD-DED3-48E0-9591-C5CA87F1384A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811E11BD-DED3-48E0-9591-C5CA87F1384A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
