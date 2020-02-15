@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindNestedClassesAndCollect
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportViewerTestRdlc", "ReportViewerTestRdlc\ReportViewerTestRdlc.csproj", "{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendingComboboxFunctionality", "ExtendingComboboxFunctionality\ExtendingComboboxFunctionality.csproj", "{96CE4596-AE6F-4353-962C-EB0FE008BA93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D0EBEE-17CA-4DA0-894D-5A48CACEE99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96CE4596-AE6F-4353-962C-EB0FE008BA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CE4596-AE6F-4353-962C-EB0FE008BA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CE4596-AE6F-4353-962C-EB0FE008BA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CE4596-AE6F-4353-962C-EB0FE008BA93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
