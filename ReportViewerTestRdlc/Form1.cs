@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,11 @@ namespace ReportViewerTestRdlc
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            List<ReportParameter> parameters = new List<ReportParameter>();
+            parameters.Add(new ReportParameter("TestName", "ALKP"));
+
+
+            this.reportViewer1.LocalReport.SetParameters(parameters);
             this.reportViewer1.RefreshReport();
         }
     }
