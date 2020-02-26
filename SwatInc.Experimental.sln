@@ -33,6 +33,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendingComboboxFunctional
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncFusionComboDatabind", "SyncFusionComboDatabind\SyncFusionComboDatabind.csproj", "{4DB7F294-446A-4E47-95C1-B785867E9413}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwilioMessaging", "TwilioMessaging\TwilioMessaging.csproj", "{0C260B54-34F3-4565-9FDF-631EE537ACDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsUI", "TwilioUI\SmsUI.csproj", "{5B44CB18-7F27-4623-BFF2-274BE19EEE68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelesignMessaging", "TelesignMessaging\TelesignMessaging.csproj", "{5DBFD816-2ECB-4E21-8F82-327AA2628961}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +107,18 @@ Global
 		{4DB7F294-446A-4E47-95C1-B785867E9413}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DB7F294-446A-4E47-95C1-B785867E9413}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DB7F294-446A-4E47-95C1-B785867E9413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C260B54-34F3-4565-9FDF-631EE537ACDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C260B54-34F3-4565-9FDF-631EE537ACDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C260B54-34F3-4565-9FDF-631EE537ACDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C260B54-34F3-4565-9FDF-631EE537ACDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B44CB18-7F27-4623-BFF2-274BE19EEE68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B44CB18-7F27-4623-BFF2-274BE19EEE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B44CB18-7F27-4623-BFF2-274BE19EEE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B44CB18-7F27-4623-BFF2-274BE19EEE68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBFD816-2ECB-4E21-8F82-327AA2628961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBFD816-2ECB-4E21-8F82-327AA2628961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBFD816-2ECB-4E21-8F82-327AA2628961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBFD816-2ECB-4E21-8F82-327AA2628961}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
