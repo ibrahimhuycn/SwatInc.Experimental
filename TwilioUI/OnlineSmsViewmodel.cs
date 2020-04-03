@@ -1,4 +1,4 @@
-﻿using TwilioMessaging;
+﻿using SmsShared;
 
 namespace SmsUI
 {

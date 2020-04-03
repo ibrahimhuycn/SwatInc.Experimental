@@ -99,7 +99,7 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Text Message";
             // 
-            // TwilioSMS
+            // OnlineSMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -113,8 +113,8 @@
             this.Controls.Add(this.textBoxSenderNumber);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "TwilioSMS";
-            this.Text = "Twilio SMS";
+            this.Name = "OnlineSMS";
+            this.Text = "Online SMS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

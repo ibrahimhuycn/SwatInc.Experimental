@@ -1,10 +1,11 @@
-﻿using System;
+﻿using SmsShared;
+using System;
 using System.Diagnostics;
 using Telesign;
 
 namespace TelesignMessaging
 {
-    public class Sms
+    public class Sms: ISms
     {
         private bool IsSmsSendingSuccessful;
         private const string customerId = "17CB5BFB-78E1-407A-A05D-3BB9EFBD2A7B";

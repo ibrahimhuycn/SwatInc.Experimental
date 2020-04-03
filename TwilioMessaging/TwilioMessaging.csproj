@@ -57,14 +57,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISms.cs" />
-    <Compile Include="SendSmsArgs.cs" />
     <Compile Include="Sms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmsShared\SmsShared.csproj">
+      <Project>{DC66CA19-CF62-4CA6-BA16-02D4F4D4B278}</Project>
+      <Name>SmsShared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SmsUI
+namespace LevyJenningsCharts
 {
     static class Program
     {
@@ -16,9 +16,7 @@ namespace SmsUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            //Change this line to switch between Twilio || Telesign
-            Application.Run(new OnlineSMS(new OnlineSmsViewmodel(new NexmoMessaging.Sms())));
+            Application.Run(new Form1());
         }
     }
 }

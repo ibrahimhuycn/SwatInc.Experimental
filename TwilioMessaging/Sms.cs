@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using SmsShared;
+using System.Diagnostics;
 using Twilio;
 using Twilio.Exceptions;
 using Twilio.Rest.Api.V2010.Account;

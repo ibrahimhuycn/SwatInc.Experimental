@@ -1,4 +1,4 @@
-﻿namespace TelesignMessaging
+﻿namespace SmsShared
 {
     public class SendSmsArgs
     {
