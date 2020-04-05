@@ -6,24 +6,25 @@ using System.Threading.Tasks;
 
 namespace ReplaceDataInList
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
             //Make an instance of a list of person
             var people = new List<Person>
             {
-                new Person() { FirstName = "Ibrahim", LastName = "Hussain", Age = 29 },
-                new Person() { FirstName = "Ahmed Hisaan", LastName = "Saeed", Age = 30 }
+                new Person() {NationalId = "A2526512", FirstName = "Ibrahim", LastName = "Hussain", Age = 29 },
+                new Person() {NationalId="A309254", FirstName = "Ahmed Hisaan", LastName = "Saeed", Age = 30 }
             };
 
-            //set is alive to false for Ibrahim without copying the list to another
-            var editedPerson = new Person() { FirstName = "Ahmed Hisaan", LastName = "Saeed", Age = 30, IsAlive = false };
-            var a = people.FindIndex( p => p.LastName == "Saeed");
+            //set is alive to false without copying the list to another
+            var editedPerson = people[1];
+            var a = people.IndexOf(editedPerson);
+            editedPerson.IsAlive = false;
 
             if (a != -1) 
-            { 
-                people.Insert(a, editedPerson); 
+            {
+                people[a] = editedPerson;
             }
             else
             {
@@ -36,30 +37,6 @@ namespace ReplaceDataInList
             }
 
             Console.ReadKey();
-        }
-
-        public class Person
-        {
-            public Person()
-            {
-                IsAlive = true;
-            }
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public int Age { get; set; }
-            public bool IsAlive { get; set; }
-            public Address Address { get; set; }
-
-            public override string ToString()
-            {
-                return $"{FirstName} | {LastName} | {Age} | {IsAlive}";
-            }
-        }
-        public class Address
-        {
-            public string Atoll { get; set; }
-            public string Island { get; set; }
-            public string House { get; set; }
         }
     }
 }
