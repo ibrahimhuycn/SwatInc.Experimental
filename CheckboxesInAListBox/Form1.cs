@@ -21,10 +21,16 @@ namespace CheckboxesInAListBox
             this.viewModel = viewModel;
             InitializeDataBinding();
             this.simpleButton1.Click += viewModel.ShowData;
+            
         }
         private void InitializeDataBinding()
         {
-            this.gridControl1.DataSource = viewModel.Fruits;
+            this.gridControl1.DataSource = viewModel.FruitsForGridView;
+
+            this.checkedListBoxControl1.DataSource = viewModel.FruitsForCheckedList;
+            checkedListBoxControl1.DisplayMember = nameof(FruitModel.Name);
+            checkedListBoxControl1.DataBindings.DefaultDataSourceUpdateMode = DataSourceUpdateMode.OnPropertyChanged;
+            checkedListBoxControl1.DataBindings.Add(new Binding("CheckedItems", viewModel, nameof(viewModel.CheckedList_CheckedModel)));
         }
     }
 
@@ -33,7 +39,8 @@ namespace CheckboxesInAListBox
     {
         public Form1ViewModel()
         {
-            this.Fruits = new List<FruitModel>();
+            this.FruitsForGridView = new List<FruitModel>();
+            this.FruitsForCheckedList = new List<FruitModel>();
             InitDemoData();
         }
 
@@ -45,20 +52,28 @@ namespace CheckboxesInAListBox
             var f4 = new FruitModel() { Name = "Date" };
             var f5 = new FruitModel() { Name = "Oragne" };
 
-            Fruits.Add(f1);
-            Fruits.Add(f2);
-            Fruits.Add(f3);
-            Fruits.Add(f4);
-            Fruits.Add(f5);
+            FruitsForGridView.Add(f1);
+            FruitsForGridView.Add(f2);
+            FruitsForGridView.Add(f3);
+            FruitsForGridView.Add(f4);
+            FruitsForGridView.Add(f5);
 
+            FruitsForCheckedList.Add(f1);
+            FruitsForCheckedList.Add(f2);
+            FruitsForCheckedList.Add(f3);
+            FruitsForCheckedList.Add(f4);
+            FruitsForCheckedList.Add(f5);
         }
 
         internal void ShowData(object sender, EventArgs e)
         {
-            MessageBox.Show(JsonConvert.SerializeObject(Fruits, Formatting.Indented));
+            MessageBox.Show(JsonConvert.SerializeObject(FruitsForGridView, Formatting.Indented));
         }
 
-        public List<FruitModel> Fruits {get; set; }
+        public List<FruitModel> FruitsForGridView {get; set; }
+        public List<FruitModel> FruitsForCheckedList {get; set; }
+        public List<FruitModel> CheckedList_CheckedModel { get; set; }
+
     }
 
     public class FruitModel
