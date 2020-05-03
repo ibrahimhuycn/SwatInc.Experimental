@@ -128,7 +128,7 @@ namespace FluentValidationTest
         static List<ValidationData> validationData =
             JsonConvert.DeserializeObject<List<ValidationData>>(DiskIO.ReadValidationData());
 
-        public static Regex Cin = new Regex(validationData.Find(v=> v.Tag == "NationalId").Regex, RegexOptions.Compiled);
+        public static Regex Cin = new Regex(validationData.Find(v=> v.Tag == "CIN").Regex, RegexOptions.Compiled);
 
     }
 
