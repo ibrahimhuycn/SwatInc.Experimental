@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckboxesInAListBox", "Che
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationTest", "FluentValidationTest\FluentValidationTest.csproj", "{5E3B3418-2449-49B0-A0A9-E2C6A145DF51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridControlDynamicCellControls", "GridControlDynamicCellControls\GridControlDynamicCellControls.csproj", "{F40421D9-36C5-4627-ABED-7D8C2C3D439B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,6 +163,10 @@ Global
 		{5E3B3418-2449-49B0-A0A9-E2C6A145DF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E3B3418-2449-49B0-A0A9-E2C6A145DF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E3B3418-2449-49B0-A0A9-E2C6A145DF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40421D9-36C5-4627-ABED-7D8C2C3D439B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40421D9-36C5-4627-ABED-7D8C2C3D439B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40421D9-36C5-4627-ABED-7D8C2C3D439B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40421D9-36C5-4627-ABED-7D8C2C3D439B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
