@@ -32,7 +32,16 @@ namespace NexmoMessaging
                     text = smsArgs.Message
                 });
 
-                IsSenndingMessageSuccessful = true;
+                foreach (var message in results.messages)
+                {
+                    if (message.error_text != null)
+                    {
+                        throw new Exception(message.error_text);
+                    }
+                }
+
+                return true;
+                
             }
             catch (Exception e)
             {

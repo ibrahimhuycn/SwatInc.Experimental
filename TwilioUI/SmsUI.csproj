@@ -253,6 +253,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MessentoSMSLibrary\MessentoSMSLibrary.csproj">
+      <Project>{f259ad3b-3f45-475f-9280-45d6f3037800}</Project>
+      <Name>MessentoSMSLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NexmoMessaging\NexmoMessaging.csproj">
       <Project>{1f972a8b-fa1a-4ec5-8247-1ef81e68301d}</Project>
       <Name>NexmoMessaging</Name>

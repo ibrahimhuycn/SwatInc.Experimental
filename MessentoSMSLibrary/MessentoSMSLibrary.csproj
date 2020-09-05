@@ -1,12 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-    <PackageReference Include="Nexmo.Csharp.Client" Version="5.1.0" />
+    <PackageReference Include="com.Messente.Api" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>

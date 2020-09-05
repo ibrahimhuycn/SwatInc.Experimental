@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationTest", "Flu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridControlDynamicCellControls", "GridControlDynamicCellControls\GridControlDynamicCellControls.csproj", "{F40421D9-36C5-4627-ABED-7D8C2C3D439B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessentoSMSLibrary", "MessentoSMSLibrary\MessentoSMSLibrary.csproj", "{F259AD3B-3F45-475F-9280-45D6F3037800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchDataGridDatasource", "SwitchDataGridDatasource\SwitchDataGridDatasource.csproj", "{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +171,14 @@ Global
 		{F40421D9-36C5-4627-ABED-7D8C2C3D439B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F40421D9-36C5-4627-ABED-7D8C2C3D439B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F40421D9-36C5-4627-ABED-7D8C2C3D439B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F259AD3B-3F45-475F-9280-45D6F3037800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F259AD3B-3F45-475F-9280-45D6F3037800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F259AD3B-3F45-475F-9280-45D6F3037800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F259AD3B-3F45-475F-9280-45D6F3037800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
