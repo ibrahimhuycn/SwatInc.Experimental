@@ -59,6 +59,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessentoSMSLibrary", "Messe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchDataGridDatasource", "SwitchDataGridDatasource\SwitchDataGridDatasource.csproj", "{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpToJson", "CSharpToJson\CSharpToJson.csproj", "{ED0B88BA-BC5B-4291-839B-380653928128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogResultTest", "DialogResultTest\DialogResultTest.csproj", "{FE0863A5-6C2C-487E-9FC6-ACDB546164FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +183,14 @@ Global
 		{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E65C0A91-B4A8-47AF-A5A4-1CE8B7B6B7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0B88BA-BC5B-4291-839B-380653928128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0B88BA-BC5B-4291-839B-380653928128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0B88BA-BC5B-4291-839B-380653928128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0B88BA-BC5B-4291-839B-380653928128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0863A5-6C2C-487E-9FC6-ACDB546164FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0863A5-6C2C-487E-9FC6-ACDB546164FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0863A5-6C2C-487E-9FC6-ACDB546164FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0863A5-6C2C-487E-9FC6-ACDB546164FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
