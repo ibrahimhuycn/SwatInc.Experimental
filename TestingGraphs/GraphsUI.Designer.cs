@@ -28,35 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            this.graphsUserControl1 = new TestingGraphs.GraphsUserControl();
             this.SuspendLayout();
             // 
-            // chartControl1
+            // graphsUserControl1
             // 
-            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartControl1.Legend.Name = "Default Legend";
-            this.chartControl1.Location = new System.Drawing.Point(0, 0);
-            this.chartControl1.Name = "chartControl1";
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.Size = new System.Drawing.Size(590, 279);
-            this.chartControl1.TabIndex = 0;
+            this.graphsUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.graphsUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.graphsUserControl1.Name = "graphsUserControl1";
+            this.graphsUserControl1.Size = new System.Drawing.Size(590, 279);
+            this.graphsUserControl1.TabIndex = 0;
             // 
             // GraphsUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 279);
-            this.Controls.Add(this.chartControl1);
+            this.Controls.Add(this.graphsUserControl1);
             this.Name = "GraphsUI";
             this.Text = "GraphsUI";
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraCharts.ChartControl chartControl1;
+        private GraphsUserControl graphsUserControl1;
     }
 }

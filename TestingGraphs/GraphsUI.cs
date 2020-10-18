@@ -7,6 +7,7 @@ namespace TestingGraphs
 {
     public partial class GraphsUI : Form
     {
+
         public GraphsUI()
         {
             InitializeComponent();
@@ -33,22 +34,11 @@ namespace TestingGraphs
                 new TestHistory() {TestName = "ALKP", Number=18, Result=26.8d, ResultDate = DateTime.Now}
             };
 
-            Series series = new Series("ALKP", ViewType.Line)
+            foreach (var item in data)
             {
-                DataSource = data,
-                ArgumentDataMember = nameof(TestHistory.Number),
-            };
-            series.ValueDataMembers.AddRange(new string[] { nameof(TestHistory.Result) });
-            series.ValueScaleType = ScaleType.Numerical;
-            series.ArgumentScaleType = ScaleType.Qualitative;
-            series.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series.Label.ResolveOverlappingMode = ResolveOverlappingMode.HideOverlapped;
-            series.Label.TextPattern = "{ResultDate}\r\n{Result}";
-            series.CrosshairLabelPattern = "{ResultDate}\r\n{Result}";
-            chartControl1.Series.Add(series);
-            ((LineSeriesView)series.View).MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
-            ((LineSeriesView)series.View).LineMarkerOptions.Kind = MarkerKind.Cross;
-
+                item.Result *= 100;
+            }
+           graphsUserControl1.InitializeChart(data, GraphsUserControl.ResultType.Numeric);
         }
     }
 
