@@ -22,7 +22,7 @@ namespace TestingGraphs
                 new TestHistory() {TestName = "ALKP", Number=6, Result=26.8d, ResultDate = DateTime.Now},
                 new TestHistory() {TestName = "ALKP", Number=7, Result=35.67d, ResultDate = DateTime.Now},
                 new TestHistory() {TestName = "ALKP", Number=8, Result=40.6d, ResultDate = DateTime.Now},
-                new TestHistory() {TestName = "ALKP", Number=9, Result=26.8d, ResultDate = DateTime.Now},
+                new TestHistory() {TestName = "ALKP", Number=9, Result=2.8d, ResultDate = DateTime.Now},
                 new TestHistory() {TestName = "ALKP", Number=10, Result=35.67d, ResultDate = DateTime.Now},
                 new TestHistory() {TestName = "ALKP", Number=11, Result=40.6d, ResultDate = DateTime.Now},
                 new TestHistory() {TestName = "ALKP", Number=12, Result=26.8d, ResultDate = DateTime.Now},
@@ -34,10 +34,6 @@ namespace TestingGraphs
                 new TestHistory() {TestName = "ALKP", Number=18, Result=26.8d, ResultDate = DateTime.Now}
             };
 
-            foreach (var item in data)
-            {
-                item.Result *= 100;
-            }
            graphsUserControl1.InitializeChart(data, GraphsUserControl.ResultType.Numeric);
         }
     }

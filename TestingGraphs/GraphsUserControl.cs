@@ -33,7 +33,7 @@ namespace TestingGraphs
             if (!editValue.IsEmpty)
             {
                 XYDiagram diagram = (XYDiagram)testHistoryChartControl.Diagram;
-                diagram.AxisX.VisualRange.SetMinMaxValues(editValue.Minimum, editValue.Maximum);
+                diagram?.AxisX.VisualRange.SetMinMaxValues(editValue.Minimum, editValue.Maximum);
             }
         }
 
@@ -108,7 +108,15 @@ namespace TestingGraphs
             rangeTrackBarControl.RefreshLabels();
             rangeTrackBarControl.Properties.ShowLabels = true;
             PlotData();
+            SetGraphDisplayRange();
         }
+
+        public void SetGraphDisplayRange()
+        {
+            var maxNumberOfPoints = GetPointsForSlider();
+            rangeTrackBarControl.Value = new DevExpress.XtraEditors.Repository.TrackBarRange() { Maximum = maxNumberOfPoints, Minimum = maxNumberOfPoints - 10 };
+        }
+
 
         private int GetPointsForSlider()
         {
