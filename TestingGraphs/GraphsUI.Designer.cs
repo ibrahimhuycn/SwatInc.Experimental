@@ -36,14 +36,14 @@
             this.graphsUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.graphsUserControl1.Location = new System.Drawing.Point(0, 0);
             this.graphsUserControl1.Name = "graphsUserControl1";
-            this.graphsUserControl1.Size = new System.Drawing.Size(590, 279);
+            this.graphsUserControl1.Size = new System.Drawing.Size(802, 367);
             this.graphsUserControl1.TabIndex = 0;
             // 
             // GraphsUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 279);
+            this.ClientSize = new System.Drawing.Size(802, 367);
             this.Controls.Add(this.graphsUserControl1);
             this.Name = "GraphsUI";
             this.Text = "GraphsUI";

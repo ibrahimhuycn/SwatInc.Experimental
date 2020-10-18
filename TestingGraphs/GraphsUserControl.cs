@@ -23,7 +23,18 @@ namespace TestingGraphs
 
             //subscribe for events
             checkEditEnableGraphLabels.CheckedChanged += CheckEditEnableGraphLabels_CheckedChanged;
-            toggleSwitchResultsAndResultsWithDates.Toggled += ToggleSwitchResultsAndResultsWithDates_Toggled; ;
+            toggleSwitchResultsAndResultsWithDates.Toggled += ToggleSwitchResultsAndResultsWithDates_Toggled;
+            rangeTrackBarControl.EditValueChanged += RangeTrackBarControl_EditValueChanged;
+        }
+
+        private void RangeTrackBarControl_EditValueChanged(object sender, EventArgs e)
+        {
+            dynamic editValue = rangeTrackBarControl.EditValue;
+            if (!editValue.IsEmpty)
+            {
+                XYDiagram diagram = (XYDiagram)testHistoryChartControl.Diagram;
+                diagram.AxisX.VisualRange.SetMinMaxValues(editValue.Minimum, editValue.Maximum);
+            }
         }
 
         private void ToggleSwitchResultsAndResultsWithDates_Toggled(object sender, EventArgs e)
@@ -62,7 +73,7 @@ namespace TestingGraphs
             if (checkbox.Checked)
             {
                 toggleSwitchResultsAndResultsWithDates.EditValue = null;
-                toggleSwitchResultsAndResultsWithDates.Enabled = false;
+                toggleSwitchResultsAndResultsWithDates.Enabled = true;
                 ShowGraphLabels();
             }
             else
@@ -88,7 +99,20 @@ namespace TestingGraphs
         {
             _testHistories = testHistories;
             _resultType = resultType;
+            var maxNumberOfPoints = GetPointsForSlider();
+            for (int i = 0; i < maxNumberOfPoints; i++)
+            {
+                rangeTrackBarControl.Properties.Labels.Add(new DevExpress.XtraEditors.Repository.TrackBarLabel() { Label = i.ToString(), Value = i});
+            }
+            rangeTrackBarControl.Properties.Maximum = maxNumberOfPoints;
+            rangeTrackBarControl.RefreshLabels();
+            rangeTrackBarControl.Properties.ShowLabels = true;
             PlotData();
+        }
+
+        private int GetPointsForSlider()
+        {
+            return _testHistories.Count;
         }
 
         private void PlotData()
