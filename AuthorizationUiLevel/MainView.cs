@@ -22,6 +22,11 @@ namespace AuthorizationUiLevel
         private void ShowAuthView()
         {
             var view = new AuthView();
+            if (!UserAuthEvaluator.EvaluateAuthForItem<Form>(view))
+            {
+                MessageBox.Show("You are not authorized to view " + view.Name);
+                return;
+            }
             view.MdiParent = this;
             view.Show();
         }
@@ -29,6 +34,11 @@ namespace AuthorizationUiLevel
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
             var view = new TestViewOne();
+            if (!UserAuthEvaluator.EvaluateAuthForItem<Form>(view))
+            {
+                MessageBox.Show("You are not authorized to view " + view.Name);
+                return;
+            }
             view.MdiParent = this;
             view?.Show();
         }
@@ -37,6 +47,11 @@ namespace AuthorizationUiLevel
         {
             var view = new TestViewTwo();
             view.MdiParent = this;
+            if (!UserAuthEvaluator.EvaluateAuthForItem<Form>(view))
+            {
+                MessageBox.Show("You are not authorized to view " + view.Name);
+                return;
+            }
             view.Show();
         }
     }

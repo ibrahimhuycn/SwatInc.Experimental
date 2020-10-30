@@ -16,11 +16,5 @@ namespace AuthorizationUiLevel
         {
             InitializeComponent();
         }
-
-        private void TestViewOne_Shown(object sender, EventArgs e)
-        {
-            UserAuthEvaluator.EvaluateAuthForItem<Form>(this);
-
-        }
     }
 }

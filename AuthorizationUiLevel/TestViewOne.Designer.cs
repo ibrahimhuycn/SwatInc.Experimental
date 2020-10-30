@@ -62,7 +62,6 @@
             this.Name = "TestViewOne";
             this.Tag = "TestViewOneAccess";
             this.Text = "TestViewOne";
-            this.Shown += new System.EventHandler(this.TestViewOne_Shown);
             this.ResumeLayout(false);
 
         }

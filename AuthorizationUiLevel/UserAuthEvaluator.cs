@@ -9,7 +9,7 @@ namespace AuthorizationUiLevel
 {
     public static class UserAuthEvaluator
     {
-        public static void EvaluateAuthForItem<T>(T view) where T: Form
+        public static bool EvaluateAuthForItem<T>(T view) where T: Form
         {
             //decide access to view
             var viewClaim = (string)view.Tag;
@@ -18,8 +18,7 @@ namespace AuthorizationUiLevel
                 //look for the same claim in the user/role claims
                 if (!DoesUserClaimAccess(viewClaim))
                 {
-                    MessageBox.Show("You are not authorized to view " + view.Name);
-                    view.Close();
+                    return false;
                 }
 
                 //get all buttons to evaluate disabling
@@ -33,7 +32,9 @@ namespace AuthorizationUiLevel
                         if (!DoesUserClaimAccess((string)button.Tag)) button.Enabled = false;
                     }
                 }
+
             }
+            return true;
         }
 
         private static bool DoesUserClaimAccess(string claim)
