@@ -60,7 +60,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "TestViewOne";
-            this.Tag = "TestViewTwoAccess";
+            this.Tag = "TestViewOneAccess";
             this.Text = "TestViewOne";
             this.Shown += new System.EventHandler(this.TestViewOne_Shown);
             this.ResumeLayout(false);
