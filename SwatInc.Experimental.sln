@@ -67,6 +67,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingGraphs", "TestingGra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationUiLevel", "AuthorizationUiLevel\AuthorizationUiLevel.csproj", "{F0F5F770-58DB-41EE-AFDD-A31781157FC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkStationName", "WorkStationName\WorkStationName.csproj", "{DE58829D-0C26-4207-8BF2-CD6176B1A35A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PadZerosInfrontToMatchFormat", "PadZerosInfrontToMatchFormat\PadZerosInfrontToMatchFormat.vbproj", "{11389CD9-21A7-415B-8C21-E9FC44102E26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +207,14 @@ Global
 		{F0F5F770-58DB-41EE-AFDD-A31781157FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0F5F770-58DB-41EE-AFDD-A31781157FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0F5F770-58DB-41EE-AFDD-A31781157FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE58829D-0C26-4207-8BF2-CD6176B1A35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE58829D-0C26-4207-8BF2-CD6176B1A35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE58829D-0C26-4207-8BF2-CD6176B1A35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE58829D-0C26-4207-8BF2-CD6176B1A35A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11389CD9-21A7-415B-8C21-E9FC44102E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11389CD9-21A7-415B-8C21-E9FC44102E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11389CD9-21A7-415B-8C21-E9FC44102E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11389CD9-21A7-415B-8C21-E9FC44102E26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
