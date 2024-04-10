@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29409.12
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WinForms.Mvvm", "WinForms.Mvvm\WinForms.Mvvm.vbproj", "{465C8F58-F414-49BF-8A1C-1562FAAC8FCE}"
 EndProject
@@ -74,6 +74,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestGrpcServiceAsWindowsService", "TestGrpcServiceAsWindowsService\TestGrpcServiceAsWindowsService.csproj", "{27783DA2-DF1A-4671-B389-86B87413DB28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestXtraReportGrouping", "TestXtraReportGrouping\TestXtraReportGrouping.csproj", "{96184907-B391-40C9-9304-980DBE0C378A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogMaskingAndEncrytion", "SerilogMaskingAndEncrytion\SerilogMaskingAndEncrytion.csproj", "{C74626F7-B8D1-43DD-8520-8BC0BC6E51BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -227,6 +229,10 @@ Global
 		{96184907-B391-40C9-9304-980DBE0C378A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96184907-B391-40C9-9304-980DBE0C378A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96184907-B391-40C9-9304-980DBE0C378A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C74626F7-B8D1-43DD-8520-8BC0BC6E51BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74626F7-B8D1-43DD-8520-8BC0BC6E51BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74626F7-B8D1-43DD-8520-8BC0BC6E51BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74626F7-B8D1-43DD-8520-8BC0BC6E51BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
