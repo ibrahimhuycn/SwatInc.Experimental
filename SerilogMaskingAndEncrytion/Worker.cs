@@ -23,6 +23,7 @@ public class Worker : BackgroundService
             if (_logger.IsEnabled(LogLevel.Information))
             {
                 _logger.LogInformation("Person Created {@PersonCreatedEvent} in {Time}", PersonCreatedEvent.GetPersonCreatedEvent(), DateTime.Now);
+                _logger.LogInformation("People Created {@PeopleCreatedEvent} in {Time}", PersonCreatedEvent.GetPeopleCreatedEvent(), DateTime.Now);
             }
             await Task.Delay(1000, stoppingToken);
         }
@@ -40,6 +41,7 @@ public class PersonCreatedEvent
     public string NationalId { get; set; } = "A309254";
 
     public static PersonCreatedEvent GetPersonCreatedEvent() { return new PersonCreatedEvent(); }
+    public static List<PersonCreatedEvent> GetPeopleCreatedEvent() { return [new PersonCreatedEvent(), new PersonCreatedEvent()]; }
 }
 
 
@@ -51,7 +53,7 @@ public class LogEncryptedAttribute : Attribute, IPropertyDestructuringAttribute
 {
     public bool TryCreateLogEventProperty(string name, object? value, ILogEventPropertyValueFactory propertyValueFactory, out LogEventProperty? property)
     {
-        if (value == null)
+        if (value is null)
         {
             property = new(name, ScalarValue.Null);
             return true;
