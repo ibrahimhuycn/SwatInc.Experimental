@@ -92,7 +92,8 @@ public static class CryptoUtilities
 public static class AesEncryption
 {
     private static readonly byte[] _key = CryptoUtilities.GenerateRandomBytes(16); //these needs to be known to anyone that needs to decrypt the data from encrypted property values.
-    private static readonly byte[] _iV = CryptoUtilities.GenerateRandomBytes(16); // in actual implementation. Or you could log these delimited and hope no one figures it out that those are key and IV. Or you could supply them or one of them at runtime from secure config
+    private static readonly byte[] _iV = CryptoUtilities.GenerateRandomBytes(16); // in actual implementation. Or you could log these delimited and hope no one figures it out that those are key and IV.
+                                                                                  // Or you could supply them or one of them at runtime from secure config
 
     public static string EncryptString(string plainText)
     {
